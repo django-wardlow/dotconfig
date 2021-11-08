@@ -1,0 +1,271 @@
+ 
+// vim:ft=json
+
+{
+	"layer": "top",
+	"position": "top",
+    "height": 24,
+
+	"modules-left": [
+        //"custom/rofi",
+        //"custom/right-arrow-dark",
+        //"custom/arquivos",
+        //"custom/right-arrow-dark",
+        //"custom/firefox",
+        //"custom/right-arrow-dark",
+        //"custom/terminal",
+        //"custom/right-arrow-dark",
+	    //"custom/osk",
+        //"custom/right-arrow-dark",
+	    //"custom/xournal",
+        //"custom/right-arrow-dark",
+        //"sway/workspaces",
+        //"custom/right-arrow-dark",
+        //"tray",
+        //"wlr/taskbar"
+        "custom/weather",
+        "custom/right-arrow-dark",
+        "custom/day",
+        "custom/right-arrow-dark",
+        "custom/media"
+	],
+	"modules-center": [
+		"custom/left-arrow-dark",
+		//"clock#1",
+		"clock#2",
+		"clock#3",
+        //"custom/weather",
+		"custom/right-arrow-dark"
+
+	],
+	"modules-right": [
+		//"custom/left-arrow-dark",
+        //"custom/media",
+        "custom/left-arrow-dark",
+        "network",
+		"custom/left-arrow-dark",
+		"custom/storage",
+        "custom/left-arrow-light",
+		"cpu",
+        "custom/left-arrow-dark",
+		"memory",
+		"custom/left-arrow-dark",
+        //"idle_inhibitor",
+		"backlight",
+		//"pulseaudio"
+		"custom/left-arrow-dark",
+        //"temperature"
+		//"battery"
+        // "custom/left-arrow-light",
+		// "tray",
+		// "custom/left-arrow-dark",
+        "custom/desligar"
+	],
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/rofi": {
+		"format": " Menu",
+        "on-click": "nwggrid",
+        //"on-click": "wofi -show run",
+        "on-click-middle": "pkill -9 wofi"
+    },
+    "custom/terminal": {
+		"format": "",
+        "on-click": "alacritty",
+        "on-click-middle": "pkill -9 alacritty"
+    },
+    "custom/arquivos": {
+		"format": "",
+        "on-click": "nautilus",
+        "on-click-right": "alacritty -e ranger",
+        "on-click-middle": "bash -c 'pkill -9 nautilus ; pkill -9 ranger'"
+    },
+    "custom/firefox": {
+		"format": "",
+        "on-click": "firefox"
+    },
+    "custom/osk": {
+                "format": "",
+        "on-click": "wf-osk"
+    },
+    "custom/xournal": {
+                "format": "",
+        "on-click": "xournalpp"
+    },
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+    "sway/window": {
+        "max-length": 80,
+        "tooltip": false
+    },
+	"clock#1": {
+		"format": " {:%a}",
+		"tooltip": false,
+        "on-click": "gsimplecal"
+	},
+	"clock#2": {
+		"format": " {:%d-%h(%m)-%Y}",
+		"tooltip": false,
+        "on-click": "gsimplecal"
+	},
+	"clock#3": {
+		"interval": 1,
+		"format": " {:%I:%M:%S %p}",
+		"tooltip": false,
+        "on-click": "gsimplecal"
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "MUTE",
+        "format-source":  " {volume}%",
+        "format-source-muted": "MUTE",
+		"format-icons": {
+			"headphones": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+			"default": [
+				"",
+				""
+			]
+		},
+		"scroll-step": 5,
+        "on-click": "pavucontrol",
+		"on-click-right": "pavucontrol"
+	},
+    "temperature": {
+        "interval": 1,
+        // "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon7/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": " {temperatureC}°C",
+        "format": " {temperatureC}°C",
+        "on-click": "xsensors"
+	},
+    "cpu": {
+        "interval": 1,
+        "format": " {usage}%"
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {used:0.2f} / {total:0.0f} GB",
+        "on-click": "alacritty -e htop"
+    },
+    "battery": {
+        "interval": 2,
+		"states": {
+			"good": 90,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+    "network": {
+        "interface": "wlp1s0",
+        "format-wifi": " {essid} ({signalStrength}%)  {bandwidthUpBits}  {bandwidthDownBits} ",
+        "format": "",
+		"format-disconnected": "",
+        "on-click": "alacritty -e nmtui",
+        "on-click-right": "wl-copy $(ip address show up scope global | grep inet6 | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c6-)",
+        "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
+        "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
+        "interval": 1
+    },
+    "custom/storage": {
+        "format": " {}",
+        "format-alt": "{percentage}% ",
+        "format-alt-click": "click-right",
+        "return-type": "json",
+        "interval": 60,
+        "exec": "~/.config/waybar/modules/storage.sh"
+    },
+    "tray": {
+  	"icon-size": 25,
+        "spacing": 10
+    },
+    "wlr/taskbar": {
+  	"format": "{icon}",
+  	"icon-size": 30,
+  	"icon-theme": "Numix-Circle",
+  	"tooltip-format": "{title}",
+  	"on-click": "activate",
+  	"on-click-middle": "close"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-alt": "{percent}% {icon}",
+        "format-alt-click": "click-right",
+        //"format-icons": ["", ""],
+        "format-icons": ["", ""],
+        "on-scroll-down": "brightnessctl s 5%-",
+        "on-scroll-up": "brightnessctl s +5%"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}idle",
+        "format-icons": {
+            "activated": "☼",
+            "deactivated": "☀"
+        }
+    },
+    "custom/weather": {
+        "format": "{alt}",
+        "format-alt": "{alt}",
+        "format-alt-click": "click-right",
+        "interval": 60,
+        "return-type": "json",
+        "exec": "~/.config/waybarTop/modules/weather.sh",
+        "exec-if": "ping wttr.in -c1",
+        "on-click": "alacritty --hold -e curl v2n.wttr.in/Bend+OR"
+    },
+        "custom/day":{
+            "format": "{}",
+            "interval": 3600,
+            "exec": "curl -s https://web.bend.k12.or.us/abc/\\?site=shs | grep 'id=\"name\"' | grep -oP '(>.+<)' | grep -oP '[^>].+[^<]'"
+    },
+        "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 75,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "on-click": "playerctl play-pause",
+        "escape": true,
+        "exec": "python $HOME/.config/waybarTop/mediaplayer.py" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/desligar": {
+    "format": "",
+    "on-click": "nwgbar"
+    }
+}

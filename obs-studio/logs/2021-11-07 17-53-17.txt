@@ -1,0 +1,97 @@
+05:53:17 PM.078: Platform: Wayland
+05:53:17 PM.092: CPU Name: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+05:53:17 PM.092: CPU Speed: 2800.000MHz
+05:53:17 PM.092: Physical Cores: 4, Logical Cores: 8
+05:53:17 PM.092: Physical Memory: 15731MB Total, 10241MB Free
+05:53:17 PM.092: Kernel Version: Linux 5.14.16-arch1-1
+05:53:17 PM.092: Distribution: "Arch Linux" Unknown
+05:53:17 PM.092: Session Type: wayland
+05:53:17 PM.093: Portable mode: false
+05:53:17 PM.131: OBS 27.1.3-1 (linux)
+05:53:17 PM.131: ---------------------------------
+05:53:17 PM.131: ---------------------------------
+05:53:17 PM.131: audio settings reset:
+05:53:17 PM.131: 	samples per sec: 48000
+05:53:17 PM.131: 	speakers:        2
+05:53:17 PM.133: ---------------------------------
+05:53:17 PM.133: Initializing OpenGL...
+05:53:17 PM.133: Using EGL/Wayland
+05:53:17 PM.166: Initialized EGL 1.5
+05:53:17 PM.187: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 630 (KBL GT2)
+05:53:17 PM.187: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 21.2.4, shading language 4.60
+05:53:17 PM.200: ---------------------------------
+05:53:17 PM.200: video settings reset:
+05:53:17 PM.200: 	base resolution:   1920x1080
+05:53:17 PM.200: 	output resolution: 1280x720
+05:53:17 PM.200: 	downscale filter:  Bicubic
+05:53:17 PM.200: 	fps:               60/1
+05:53:17 PM.200: 	format:            NV12
+05:53:17 PM.200: 	YUV mode:          709/Partial
+05:53:17 PM.200: NV12 texture support not available
+05:53:17 PM.203: Audio monitoring device:
+05:53:17 PM.203: 	name: Default
+05:53:17 PM.203: 	id: default
+05:53:17 PM.203: ---------------------------------
+05:53:17 PM.204: Failed to load 'en-US' text for module: 'decklink-captions.so'
+05:53:17 PM.205: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+05:53:17 PM.278: [pipewire] No captures available
+05:53:17 PM.279: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+05:53:17 PM.279: No blackmagic support
+05:53:17 PM.287: v4l2loopback not installed, virtual camera disabled
+05:53:17 PM.291: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+05:53:17 PM.291: 
+05:53:17 PM.291: FFMPEG VAAPI supported
+05:53:17 PM.300: ---------------------------------
+05:53:17 PM.300:   Loaded Modules:
+05:53:17 PM.300:     wlrobs.so
+05:53:17 PM.300:     text-freetype2.so
+05:53:17 PM.300:     sndio.so
+05:53:17 PM.300:     rtmp-services.so
+05:53:17 PM.300:     obs-x264.so
+05:53:17 PM.300:     obs-transitions.so
+05:53:17 PM.300:     obs-outputs.so
+05:53:17 PM.300:     obs-libfdk.so
+05:53:17 PM.300:     obs-filters.so
+05:53:17 PM.300:     obs-ffmpeg.so
+05:53:17 PM.300:     linux-v4l2.so
+05:53:17 PM.300:     linux-pulseaudio.so
+05:53:17 PM.300:     linux-jack.so
+05:53:17 PM.300:     linux-decklink.so
+05:53:17 PM.300:     linux-capture.so
+05:53:17 PM.300:     linux-alsa.so
+05:53:17 PM.300:     image-source.so
+05:53:17 PM.300:     frontend-tools.so
+05:53:17 PM.300:     decklink-ouput-ui.so
+05:53:17 PM.300:     decklink-captions.so
+05:53:17 PM.300: ---------------------------------
+05:53:17 PM.300: ==== Startup complete ===============================================
+05:53:17 PM.304: All scene data cleared
+05:53:17 PM.304: ------------------------------------------------
+05:53:17 PM.311: pulse-input: Server name: 'pulseaudio 15.0'
+05:53:17 PM.311: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+05:53:17 PM.311: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+05:53:17 PM.311: [Loaded global audio device]: 'Desktop Audio'
+05:53:17 PM.312: pulse-input: Server name: 'pulseaudio 15.0'
+05:53:17 PM.312: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+05:53:17 PM.312: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+05:53:17 PM.312: [Loaded global audio device]: 'Mic/Aux'
+05:53:17 PM.313: Switched to scene 'Scene'
+05:53:17 PM.313: ------------------------------------------------
+05:53:17 PM.313: Loaded scenes:
+05:53:17 PM.313: - scene 'Scene':
+05:53:17 PM.313:     - source: 'Wayland output(dmabuf)' (wlrobs-dmabuf)
+05:53:17 PM.313: ------------------------------------------------
+05:53:17 PM.864: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+05:53:17 PM.864: 
+05:53:20 PM.523: Switched to Preview/Program mode
+05:53:20 PM.523: ------------------------------------------------
+05:53:23 PM.538: Switched to scene 'Scene'
+05:53:23 PM.543: Switched to regular Preview mode
+05:53:23 PM.543: ------------------------------------------------
+05:55:14 PM.868: ==== Shutting down ==================================================
+05:55:14 PM.877: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+05:55:14 PM.877: pulse-input: Got 72172 packets with 5184457 frames
+05:55:14 PM.877: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+05:55:14 PM.877: pulse-input: Got 12019 packets with 5184392 frames
+05:55:14 PM.878: All scene data cleared
+05:55:14 PM.878: ------------------------------------------------

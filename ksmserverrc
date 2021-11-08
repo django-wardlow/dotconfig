@@ -1,0 +1,18 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10d5e1d368000162187597700000006290003
+clientId2=10d5e1d368000162188107700000006410002
+count=2
+program1=firefox
+program2=pulseaudio
+restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,10d5e1d368000162187597700000006290003
+restartCommand2=
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=user1
+userId2=user1

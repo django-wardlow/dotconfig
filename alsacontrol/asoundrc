@@ -1,0 +1,102 @@
+# ALSA-Control - ALSA configuration interface
+# Copyright (C) 2020 sezanzeb <proxima@hip70890b.de>
+#
+# This file is part of ALSA-Control.
+#
+# ALSA-Control is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# ALSA-Control is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with ALSA-Control.  If not, see <https://www.gnu.org/licenses/>.
+
+# This file will be overwritten, don't edit it by hand
+
+# used for hardware cards
+pcm.alsacontrol-dmix {
+    type dmix
+    ipc_key 92882631  # some made up value
+    slave {
+        pcm "null"
+        channels 2
+    }
+}
+
+# used for jack level monitoring
+# This could also be used for sysdefault pcms, but that doesn't seem
+# to support more channels than 2, hence dmix above is used.
+pcm.alsacontrol-plug {
+    type plug
+    slave.pcm "null"
+}
+
+# used so that multiple apps can record from that device
+pcm.alsacontrol-dsnoop {
+    type dsnoop
+    ipc_key 34376432  # some made up value
+    slave {
+        pcm "null"
+    }
+}
+
+pcm.alsacontrol-output-softvol {
+    type softvol
+    slave.pcm {
+        type softvol
+        slave.pcm "null"
+        control {
+            name alsacontrol-output-volume
+            card 0
+        }
+    }
+    control {
+        name alsacontrol-output-mute
+        card 0
+    }
+    resolution 2
+}
+
+pcm.alsacontrol-input-softvol {
+    type softvol
+    slave.pcm {
+        type softvol
+        slave.pcm {
+            type plug
+            slave.pcm "null"
+        }
+        control {
+            name alsacontrol-input-volume
+            card 0
+        }
+    }
+    control {
+        name alsacontrol-input-mute
+        card 0
+    }
+    resolution 2
+}
+
+# Have data from jack in the correct format using a plug, so
+# that its input level can be monitored.
+pcm.alsacontrol-jack-input {
+    type plug
+    slave.pcm jack
+}
+
+pcm.!default {
+    type asym
+    playback.pcm {
+        type plug
+        slave.pcm "alsacontrol-output-softvol"
+    }
+    capture.pcm {
+        type plug
+        slave.pcm "alsacontrol-input-softvol"
+    }
+}

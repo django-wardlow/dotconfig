@@ -1,0 +1,137 @@
+* {
+	font-size: 14px;
+	font-family: monospace;
+}
+window#waybar {
+	background: transparent;
+	color: #fdf6e3;
+}
+label
+  { padding: 0px 4px
+  }
+
+window#waybar
+  { background-color: rgba(0, 0, 0, 0.75)
+  ; color: #eeeeee
+  ; border-top: 1px solid black
+  }
+
+#workspaces button {
+	padding: 0 2px;
+	color: #fdf6e3;
+}
+#workspaces button.focused {
+	color: #b600bd;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #1a1a1a;
+	border: #1a1a1a;
+	padding: 0 3px;
+}
+#clock.1 {
+    color: #ffcf7c;
+}
+#clock.2 {
+    color: #00ffbd;
+}
+#clock.3 {
+    color: #ffcf7c;
+}
+#pulseaudio {
+	color: #009eff;
+}
+#backlight {
+	color: #b58900;
+}
+#memory {
+	color: #00ffbd;
+}
+#cpu {
+	color: #f700ff;
+}
+#battery {
+	color: #aeff00;
+}
+#custom-desligar {
+	color: #ff0000;
+}
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+	color: #1a1a1a;
+    opacity: 0.7;
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+	color: transparent;
+	background: transparent;
+}
+
+#custom-desligar {
+	background: #1a1a1a;
+    opacity: 0.7;
+}
+#custom-rofi {
+	color: #0061ff;
+}
+#custom-terminal {
+	color: #ffffff;
+}
+#custom-storage {
+	color: #ffa000;
+}
+#network {
+	color: #fff89d;
+}
+#custom-weather {
+	color: #9dfff5;
+}
+#idle_inhibitor {
+	color: #f8fc03;
+}
+#temperature {
+  padding: 0 10px;
+  margin: 0 4px;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+#temperature { color: #88c0d0; }
+#temperature.critical { color: #bf616a; }
+#custom-desligar {
+	padding: 0 10px;
+}
+
+#battery:not(.charging)
+  { background-color: green
+  }
+#battery.good:not(.charging)
+  { background-color: #26A65B
+  }
+#battery.medium:not(.charging)
+  { background-color: yellow
+  }
+#battery.warning:not(.charging)
+  { background-color: orange
+  }
+#battery.charging
+  { background-color: #028AE5
+  }
+  #battery { color: #8fbcbb; }
+#battery.critical:not(.charging) { color: #bf616a; }
+
+#network.disconnected { color: #bf616a; }
+
+#pulseaudio.muted { color: #bf616a; }
+#pulseaudio.muted
+  { background-color: red
+  }

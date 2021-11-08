@@ -1,0 +1,14 @@
+{
+	"lang": "en-US",
+	"darkThemeInvert": false,
+	"disable-hide": true,
+	"option-to-hide-menu": false,
+	"option-to-disable-internal-external-popup": false,
+	"allow-multiple": false,
+	"visible": true,
+	"webview-onenote": {
+		"url": "https://onedrive.live.com/redir?resid=2A0BF1BE9F207626%211766&page=Edit&wd=target%28end%20of%20year%20review.one%7C9cf5b384-4096-44f5-9710-e3becbee0a43%2Freview%7Cd65add82-d857-4f27-8bb6-411aeca5ae8e%2F%29",
+		"proxy": ""
+	},
+	"maximized": true
+}

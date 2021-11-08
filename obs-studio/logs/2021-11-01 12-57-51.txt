@@ -1,0 +1,313 @@
+12:57:51 PM.887: Platform: Wayland
+12:57:51 PM.902: CPU Name: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+12:57:51 PM.902: CPU Speed: 2800.000MHz
+12:57:51 PM.919: Physical Cores: 4, Logical Cores: 8
+12:57:51 PM.919: Physical Memory: 15731MB Total, 4279MB Free
+12:57:51 PM.919: Kernel Version: Linux 5.14.15-arch1-1
+12:57:51 PM.919: Distribution: "Arch Linux" Unknown
+12:57:51 PM.919: Session Type: wayland
+12:57:51 PM.919: Portable mode: false
+12:57:51 PM.959: OBS 27.1.3-1 (linux)
+12:57:51 PM.959: ---------------------------------
+12:57:51 PM.959: ---------------------------------
+12:57:51 PM.959: audio settings reset:
+12:57:51 PM.959: 	samples per sec: 48000
+12:57:51 PM.959: 	speakers:        2
+12:57:51 PM.961: ---------------------------------
+12:57:51 PM.961: Initializing OpenGL...
+12:57:51 PM.961: Using EGL/Wayland
+12:57:51 PM.992: Initialized EGL 1.5
+12:57:52 PM.011: Loading up OpenGL on adapter Intel Mesa Intel(R) HD Graphics 630 (KBL GT2)
+12:57:52 PM.011: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 21.2.4, shading language 4.60
+12:57:52 PM.062: ---------------------------------
+12:57:52 PM.062: video settings reset:
+12:57:52 PM.062: 	base resolution:   1920x1080
+12:57:52 PM.062: 	output resolution: 1280x720
+12:57:52 PM.062: 	downscale filter:  Bicubic
+12:57:52 PM.062: 	fps:               30/1
+12:57:52 PM.062: 	format:            NV12
+12:57:52 PM.062: 	YUV mode:          709/Partial
+12:57:52 PM.062: NV12 texture support not available
+12:57:52 PM.065: Audio monitoring device:
+12:57:52 PM.065: 	name: Default
+12:57:52 PM.065: 	id: default
+12:57:52 PM.066: ---------------------------------
+12:57:52 PM.067: Failed to load 'en-US' text for module: 'decklink-captions.so'
+12:57:52 PM.068: Failed to load 'en-US' text for module: 'decklink-ouput-ui.so'
+12:57:52 PM.138: [pipewire] No captures available
+12:57:52 PM.139: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+12:57:52 PM.139: No blackmagic support
+12:57:52 PM.146: v4l2loopback not installed, virtual camera disabled
+12:57:52 PM.159: os_dlopen(libnvidia-encode.so.1->libnvidia-encode.so.1): libnvidia-encode.so.1: cannot open shared object file: No such file or directory
+12:57:52 PM.159: 
+12:57:52 PM.159: FFMPEG VAAPI supported
+12:57:52 PM.167: ---------------------------------
+12:57:52 PM.167:   Loaded Modules:
+12:57:52 PM.167:     text-freetype2.so
+12:57:52 PM.167:     sndio.so
+12:57:52 PM.167:     rtmp-services.so
+12:57:52 PM.167:     obs-x264.so
+12:57:52 PM.167:     obs-transitions.so
+12:57:52 PM.167:     obs-outputs.so
+12:57:52 PM.167:     obs-libfdk.so
+12:57:52 PM.167:     obs-filters.so
+12:57:52 PM.167:     obs-ffmpeg.so
+12:57:52 PM.167:     linux-v4l2.so
+12:57:52 PM.167:     linux-pulseaudio.so
+12:57:52 PM.167:     linux-jack.so
+12:57:52 PM.167:     linux-decklink.so
+12:57:52 PM.167:     linux-capture.so
+12:57:52 PM.167:     linux-alsa.so
+12:57:52 PM.167:     image-source.so
+12:57:52 PM.167:     frontend-tools.so
+12:57:52 PM.167:     decklink-ouput-ui.so
+12:57:52 PM.167:     decklink-captions.so
+12:57:52 PM.167: ---------------------------------
+12:57:52 PM.167: ==== Startup complete ===============================================
+12:57:52 PM.170: No scene file found, creating default scene
+12:57:52 PM.170: All scene data cleared
+12:57:52 PM.170: ------------------------------------------------
+12:57:52 PM.176: pulse-input: Server name: 'pulseaudio 15.0'
+12:57:52 PM.176: pulse-input: Audio format: s16le, 48000 Hz, 2 channels
+12:57:52 PM.176: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+12:57:52 PM.271: pulse-input: Server name: 'pulseaudio 15.0'
+12:57:52 PM.271: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+12:57:52 PM.271: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+12:57:52 PM.272: Switched to scene 'Scene'
+12:57:52 PM.272: Failed to glob scene collections
+12:57:52 PM.827: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+12:57:52 PM.827: 
+12:58:08 PM.943: 
+12:58:08 PM.943: ==== Auto-config wizard testing commencing ======
+
+12:58:08 PM.999: ---------------------------------
+12:58:08 PM.999: video settings reset:
+12:58:08 PM.999: 	base resolution:   1920x1080
+12:58:08 PM.999: 	output resolution: 1920x1080
+12:58:08 PM.999: 	downscale filter:  Bicubic
+12:58:08 PM.999: 	fps:               60/1
+12:58:08 PM.999: 	format:            NV12
+12:58:08 PM.999: 	YUV mode:          709/Partial
+12:58:09 PM.000: NV12 texture support not available
+12:58:09 PM.015: ---------------------------------
+12:58:09 PM.015: [x264 encoder: 'test_x264'] preset: veryfast
+12:58:09 PM.015: [x264 encoder: 'test_x264'] profile: high
+12:58:09 PM.024: [x264 encoder: 'test_x264'] settings:
+12:58:09 PM.024: 	rate_control: CRF
+12:58:09 PM.024: 	bitrate:      0
+12:58:09 PM.024: 	buffer size:  0
+12:58:09 PM.024: 	crf:          20
+12:58:09 PM.024: 	fps_num:      60
+12:58:09 PM.024: 	fps_den:      1
+12:58:09 PM.024: 	width:        1920
+12:58:09 PM.024: 	height:       1080
+12:58:09 PM.024: 	keyint:       250
+12:58:09 PM.024: 
+12:58:09 PM.035: ---------------------------------
+12:58:09 PM.036: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: 3
+12:58:09 PM.036: 
+12:58:14 PM.042: Output 'null': stopping
+12:58:14 PM.042: Output 'null': Total frames output: 254
+12:58:14 PM.042: Output 'null': Total drawn frames: 300
+12:58:14 PM.192: Video stopped, number of skipped frames due to encoding lag: 178/292 (61.0%)
+12:58:14 PM.348: ---------------------------------
+12:58:14 PM.348: video settings reset:
+12:58:14 PM.348: 	base resolution:   1920x1080
+12:58:14 PM.348: 	output resolution: 1920x1080
+12:58:14 PM.348: 	downscale filter:  Bicubic
+12:58:14 PM.348: 	fps:               30/1
+12:58:14 PM.348: 	format:            NV12
+12:58:14 PM.348: 	YUV mode:          709/Partial
+12:58:14 PM.349: NV12 texture support not available
+12:58:14 PM.351: ---------------------------------
+12:58:14 PM.351: [x264 encoder: 'test_x264'] preset: veryfast
+12:58:14 PM.351: [x264 encoder: 'test_x264'] profile: high
+12:58:14 PM.351: [x264 encoder: 'test_x264'] settings:
+12:58:14 PM.351: 	rate_control: CRF
+12:58:14 PM.351: 	bitrate:      0
+12:58:14 PM.351: 	buffer size:  0
+12:58:14 PM.351: 	crf:          20
+12:58:14 PM.351: 	fps_num:      30
+12:58:14 PM.351: 	fps_den:      1
+12:58:14 PM.351: 	width:        1920
+12:58:14 PM.351: 	height:       1080
+12:58:14 PM.351: 	keyint:       250
+12:58:14 PM.351: 
+12:58:14 PM.353: ---------------------------------
+12:58:14 PM.353: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: 3
+12:58:14 PM.353: 
+12:58:19 PM.356: Output 'null': stopping
+12:58:19 PM.356: Output 'null': Total frames output: 116
+12:58:19 PM.356: Output 'null': Total drawn frames: 150
+12:58:19 PM.376: Video stopped, number of skipped frames due to encoding lag: 13/144 (9.0%)
+12:58:19 PM.584: ---------------------------------
+12:58:19 PM.584: video settings reset:
+12:58:19 PM.584: 	base resolution:   1920x1080
+12:58:19 PM.584: 	output resolution: 1280x720
+12:58:19 PM.584: 	downscale filter:  Bicubic
+12:58:19 PM.584: 	fps:               60/1
+12:58:19 PM.584: 	format:            NV12
+12:58:19 PM.584: 	YUV mode:          709/Partial
+12:58:19 PM.584: NV12 texture support not available
+12:58:19 PM.586: ---------------------------------
+12:58:19 PM.586: [x264 encoder: 'test_x264'] preset: veryfast
+12:58:19 PM.586: [x264 encoder: 'test_x264'] profile: high
+12:58:19 PM.586: [x264 encoder: 'test_x264'] settings:
+12:58:19 PM.586: 	rate_control: CRF
+12:58:19 PM.586: 	bitrate:      0
+12:58:19 PM.586: 	buffer size:  0
+12:58:19 PM.586: 	crf:          20
+12:58:19 PM.586: 	fps_num:      60
+12:58:19 PM.586: 	fps_den:      1
+12:58:19 PM.586: 	width:        1280
+12:58:19 PM.586: 	height:       720
+12:58:19 PM.586: 	keyint:       250
+12:58:19 PM.586: 
+12:58:19 PM.589: ---------------------------------
+12:58:19 PM.589: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: 3
+12:58:19 PM.589: 
+12:58:24 PM.590: Output 'null': stopping
+12:58:24 PM.590: Output 'null': Total frames output: 270
+12:58:24 PM.590: Output 'null': Total drawn frames: 299 (300 attempted)
+12:58:24 PM.590: Output 'null': Number of lagged frames due to rendering lag/stalls: 1 (0.3%)
+12:58:24 PM.687: ---------------------------------
+12:58:24 PM.687: video settings reset:
+12:58:24 PM.687: 	base resolution:   1920x1080
+12:58:24 PM.687: 	output resolution: 1280x720
+12:58:24 PM.687: 	downscale filter:  Bicubic
+12:58:24 PM.687: 	fps:               30/1
+12:58:24 PM.687: 	format:            NV12
+12:58:24 PM.687: 	YUV mode:          709/Partial
+12:58:24 PM.687: NV12 texture support not available
+12:58:24 PM.691: ---------------------------------
+12:58:24 PM.691: [x264 encoder: 'test_x264'] preset: veryfast
+12:58:24 PM.691: [x264 encoder: 'test_x264'] profile: high
+12:58:24 PM.691: [x264 encoder: 'test_x264'] settings:
+12:58:24 PM.691: 	rate_control: CRF
+12:58:24 PM.691: 	bitrate:      0
+12:58:24 PM.691: 	buffer size:  0
+12:58:24 PM.691: 	crf:          20
+12:58:24 PM.691: 	fps_num:      30
+12:58:24 PM.691: 	fps_den:      1
+12:58:24 PM.691: 	width:        1280
+12:58:24 PM.691: 	height:       720
+12:58:24 PM.691: 	keyint:       250
+12:58:24 PM.691: 
+12:58:24 PM.698: ---------------------------------
+12:58:24 PM.699: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: 3
+12:58:24 PM.699: 
+12:58:29 PM.699: Output 'null': stopping
+12:58:29 PM.707: Output 'null': Total frames output: 123
+12:58:29 PM.708: Output 'null': Total drawn frames: 150
+12:58:29 PM.791: ---------------------------------
+12:58:29 PM.792: video settings reset:
+12:58:29 PM.792: 	base resolution:   1920x1080
+12:58:29 PM.792: 	output resolution: 852x480
+12:58:29 PM.792: 	downscale filter:  Bicubic
+12:58:29 PM.792: 	fps:               60/1
+12:58:29 PM.792: 	format:            NV12
+12:58:29 PM.792: 	YUV mode:          709/Partial
+12:58:29 PM.792: NV12 texture support not available
+12:58:29 PM.795: ---------------------------------
+12:58:29 PM.795: [x264 encoder: 'test_x264'] preset: veryfast
+12:58:29 PM.795: [x264 encoder: 'test_x264'] profile: high
+12:58:29 PM.795: [x264 encoder: 'test_x264'] settings:
+12:58:29 PM.795: 	rate_control: CRF
+12:58:29 PM.795: 	bitrate:      0
+12:58:29 PM.795: 	buffer size:  0
+12:58:29 PM.795: 	crf:          20
+12:58:29 PM.795: 	fps_num:      60
+12:58:29 PM.795: 	fps_den:      1
+12:58:29 PM.795: 	width:        852
+12:58:29 PM.795: 	height:       480
+12:58:29 PM.795: 	keyint:       250
+12:58:29 PM.795: 
+12:58:29 PM.798: ---------------------------------
+12:58:29 PM.798: [FFmpeg aac encoder: 'test_aac'] bitrate: 32, channels: 2, channel_layout: 3
+12:58:29 PM.798: 
+12:58:34 PM.799: Output 'null': stopping
+12:58:34 PM.799: Output 'null': Total frames output: 273
+12:58:34 PM.799: Output 'null': Total drawn frames: 300
+12:58:34 PM.845: ---------------------------------
+12:58:34 PM.845: video settings reset:
+12:58:34 PM.845: 	base resolution:   1920x1080
+12:58:34 PM.845: 	output resolution: 1280x720
+12:58:34 PM.845: 	downscale filter:  Bicubic
+12:58:34 PM.845: 	fps:               30/1
+12:58:34 PM.845: 	format:            NV12
+12:58:34 PM.845: 	YUV mode:          709/Partial
+12:58:34 PM.845: NV12 texture support not available
+12:58:49 PM.288: ---------------------------------
+12:58:49 PM.288: video settings reset:
+12:58:49 PM.288: 	base resolution:   1920x1080
+12:58:49 PM.288: 	output resolution: 1280x720
+12:58:49 PM.288: 	downscale filter:  Bicubic
+12:58:49 PM.288: 	fps:               60/1
+12:58:49 PM.288: 	format:            NV12
+12:58:49 PM.288: 	YUV mode:          709/Partial
+12:58:49 PM.288: NV12 texture support not available
+12:58:49 PM.299: 
+12:58:49 PM.299: ==== Auto-config wizard testing stopping ========
+
+12:59:28 PM.620: [Media Source 'Media Source']: settings:
+12:59:28 PM.620: 	input:                   
+12:59:28 PM.620: 	input_format:            (null)
+12:59:28 PM.620: 	speed:                   100
+12:59:28 PM.620: 	is_looping:              no
+12:59:28 PM.620: 	is_linear_alpha:         no
+12:59:28 PM.620: 	is_hw_decoding:          no
+12:59:28 PM.620: 	is_clear_on_media_end:   yes
+12:59:28 PM.620: 	restart_on_activate:     yes
+12:59:28 PM.620: 	close_when_inactive:     no
+12:59:28 PM.629: User added source 'Media Source' (ffmpeg_source) to scene 'Scene'
+12:59:39 PM.714: User Removed source 'Media Source' (ffmpeg_source) from scene 'Scene'
+01:00:30 PM.327: User added source 'Group' (group) to scene 'Scene'
+01:00:34 PM.131: User Removed source 'Group' (group) from scene 'Scene'
+01:00:51 PM.205: v4l2-input: Start capture from 
+01:00:51 PM.205: v4l2-input: Unable to open device
+01:00:51 PM.205: v4l2-input: Initialization failed
+01:00:51 PM.212: User added source 'Video Capture Device (V4L2)' (v4l2_input) to scene 'Scene'
+01:00:51 PM.223: v4l2-input: /dev/video1 seems to not support video capture
+01:00:51 PM.336: v4l2-input: Found device 'EasyCamera: EasyCamera' at /dev/video0
+01:00:51 PM.338: v4l2-input: Found input 'Camera 1' (Index 0)
+01:00:51 PM.338: v4l2-controls: setting default for Power Line Frequency to 1
+01:00:51 PM.339: v4l2-input: Pixelformat: Motion-JPEG (unavailable)
+01:00:51 PM.339: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+01:00:51 PM.339: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+01:00:51 PM.339: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+01:00:51 PM.339: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+01:00:51 PM.339: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+01:00:51 PM.341: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+01:00:51 PM.342: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+01:00:51 PM.344: v4l2-input: Start capture from /dev/video0
+01:00:51 PM.346: v4l2-input: Input: 0
+01:00:51 PM.346: v4l2-input: Selected video format not supported
+01:00:51 PM.346: v4l2-input: Initialization failed
+01:00:51 PM.348: v4l2-input: Pixelformat: Motion-JPEG (unavailable)
+01:00:51 PM.348: v4l2-input: Pixelformat: YUYV 4:2:2 (available)
+01:00:51 PM.348: v4l2-input: Pixelformat: RGB3 (Emulated) (unavailable)
+01:00:51 PM.348: v4l2-input: Pixelformat: BGR3 (Emulated) (available)
+01:00:51 PM.348: v4l2-input: Pixelformat: YU12 (Emulated) (available)
+01:00:51 PM.348: v4l2-input: Pixelformat: YV12 (Emulated) (available)
+01:00:51 PM.349: v4l2-input: Stepwise and Continuous framesizes are currently hardcoded
+01:00:51 PM.351: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+01:00:51 PM.358: v4l2-input: Stepwise and Continuous framerates are currently hardcoded
+01:00:51 PM.361: v4l2-input: Start capture from /dev/video0
+01:00:51 PM.363: v4l2-input: Input: 0
+01:00:51 PM.368: v4l2-input: Resolution: 1280x720
+01:00:51 PM.368: v4l2-input: Pixelformat: YUYV
+01:00:51 PM.368: v4l2-input: Linesize: 2560 Bytes
+01:00:51 PM.368: v4l2-input: Framerate: 10.00 fps
+01:00:51 PM.370: v4l2-input: /dev/video0: select timeout set to 500000us (5x frame periods)
+01:01:09 PM.526: v4l2-input: /dev/video0: Stopped capture after 178 frames
+01:01:09 PM.550: v4l2-input: Start capture from 
+01:01:09 PM.550: v4l2-input: Unable to open device
+01:01:09 PM.550: v4l2-input: Initialization failed
+01:01:13 PM.079: User Removed source 'Video Capture Device (V4L2)' (v4l2_input) from scene 'Scene'
+01:01:38 PM.784: ==== Shutting down ==================================================
+01:01:38 PM.787: pulse-input: Stopped recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor'
+01:01:38 PM.788: pulse-input: Got 45874 packets with 10784963 frames
+01:01:38 PM.788: pulse-input: Stopped recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo'
+01:01:38 PM.788: pulse-input: Got 22993 packets with 9988624 frames
+01:01:38 PM.789: All scene data cleared
+01:01:38 PM.789: ------------------------------------------------
